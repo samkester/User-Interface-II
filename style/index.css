@@ -129,11 +129,30 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
 }
 
 .gallery-item img{
-    border-radius: 10px
+    border-radius: 10px;
+    transition: opacity 1s;
 }
 
 .gallery-item h3{
     text-align: center;
+}
+
+.gallery-description{
+    position: absolute;
+    width: 25%;
+    min-width: 200px;
+    flex-shrink: 1;
+    padding: 1%;
+    visibility: hidden;
+    transition: visibility 1s;
+}
+
+.gallery-item:hover .gallery-description+img{
+    opacity: .2;
+}
+
+.gallery-item:hover .gallery-description{
+    visibility: visible;
 }
 
  /* footer */
