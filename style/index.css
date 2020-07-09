@@ -1,1 +1,113 @@
-/* Add CSS styling here */
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;    padding: 0;    border: 0;    font-size: 100%;    max-width: 100%;    font: inherit;    vertical-align: baseline;  }
+
+/* basic styles */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* add a font here */
+    font-size: 1.6rem;
+    color: silver;
+    background-color: #00002f;
+}
+
+.fullwidth-shaded{
+    width:100%;
+    color: #002f2f;
+    background-color:silver;
+    padding: 2%;
+}
+
+a, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header */
+
+header h1{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+nav{
+    margin-top: 1%;
+    display:flex;
+}
+
+nav a{
+    display:inline-block;
+    width: 20%;
+    max-width: 100px;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+    /*border-radius: 10px;*/
+    background-color: #000066;
+    color: darkgray;
+}
+
+nav a:first-child{
+    border-radius: 10px 0px 0px 10px;
+}
+
+nav a:last-child{
+    border-radius: 0px 10px 10px 0px;
+}
+
+nav a:visited
+{
+    color: darkgray;
+}
+
+nav a:hover, a:active, a.current-page, a.current-page:visited{
+    background-color: #006666;
+    color: silver;
+    font-weight: bold;
+}
+
+/* main */
+
+/* intro */
+
+
+/* gallery */
+
+
+/* header .fullwidth-shaded
+
+main
+	section .intro
+		left-aligned halfwidth image
+		right-aligned box
+			centered box
+				[SUBJECT NAME HERE]
+				Button for My Projects
+				paragraph text
+    section .gallery
+        div .gallery-item - quarter-boxes but some margin or padding between them
+            square image   
+            center-aligned h3
+
+Footer .fullwidth-shaded
+    div .centerbox
+        h2
+        link
+ */
+
+ /* footer */
+
+ footer{
+    display:flex;
+    justify-content: center;
+ }
+
+ footer div{
+     margin:1%;
+ }
