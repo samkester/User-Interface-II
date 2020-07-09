@@ -2,7 +2,7 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,  
 small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,  
 article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;    padding: 0;    border: 0;    font-size: 100%;    max-width: 100%;    font: inherit;    vertical-align: baseline;  }
+    margin: 0;    padding: 0;    border: 0;    font-size: 100%;    max-width: 100%;    font: inherit;    box-sizing: border-box;   vertical-align: baseline;  }
 
 /* basic styles */
 
@@ -18,7 +18,7 @@ body{
 }
 
 .fullwidth-shaded{
-    width:100%;
+    width: 100%;
     color: #002f2f;
     background-color:silver;
     padding: 2%;
@@ -32,7 +32,7 @@ a, a:visited, a:hover, a:active{
 /* header */
 
 header h1{
-    font-size: 3.2rem;
+    font-size: 6.4rem;
     font-weight: bold;
 }
 
@@ -76,30 +76,86 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
 
 /* intro */
 
+.intro{
+    display: flex;
+    justify-content: center;
+}
+
+.halfbox{
+    width: 50%;
+    flex-shrink: 1;
+}
+
+.intro img{
+    width: 100%;
+    padding: 1%;
+}
+
+.introduction-content-box{
+    height:100%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;    
+}
+
+.intro h2{
+    font-size: 3.2rem;
+}
+
+.intro a{
+    display:inline-block;
+    width: 20%;
+    max-width: 100px;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    background-color: #000066;
+    color: darkgray;
+    margin: 3% 0;
+}
+
+.intro a:visited
+{
+    color: darkgray;
+}
+
+.intro a:hover, a:active, a.current-page, a.current-page:visited{
+    background-color: #006666;
+    color: silver;
+    font-weight: bold;
+    border-color: silver;
+}
+
+/*.intro p{
+    
+}*/
 
 /* gallery */
 
+.gallery{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
 
-/* header .fullwidth-shaded
+.gallery-item{
+    width: 25%;
+    min-width: 200px;
+    flex-shrink: 1;
+    padding: 1%;
+}
 
-main
-	section .intro
-		left-aligned halfwidth image
-		right-aligned box
-			centered box
-				[SUBJECT NAME HERE]
-				Button for My Projects
-				paragraph text
-    section .gallery
-        div .gallery-item - quarter-boxes but some margin or padding between them
-            square image   
-            center-aligned h3
+/*.gallery-item img{
+    
+}*/
 
-Footer .fullwidth-shaded
-    div .centerbox
-        h2
-        link
- */
+.gallery-item h3{
+    text-align: center;
+}
 
  /* footer */
 
@@ -109,5 +165,33 @@ Footer .fullwidth-shaded
  }
 
  footer div{
-     margin:1%;
+    margin:1%;
+    text-align: center;
  }
+
+ footer a{
+    display:inline-block;
+    width: 20vw;
+    max-width: 100px;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    background-color: #000066;
+    color: darkgray;
+    margin: 3% 0;
+}
+
+footer a:visited
+{
+    color: darkgray;
+}
+
+footer a:hover, a:active, a.current-page, a.current-page:visited{
+    background-color: #006666;
+    color: silver;
+    font-weight: bold;
+    border-color: silver;
+}
+
