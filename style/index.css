@@ -109,32 +109,6 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
     font-size: 3.2rem;
 }
 
-.intro a{
-    display:inline-block;
-    width: 20%;
-    max-width: 100px;
-    text-align: center;
-    padding: 0.5em;
-    margin: 0;
-    border: 2px solid darkgray;
-    border-radius: 10px;
-    background-color: #000066;
-    color: darkgray;
-    margin: 3% 0;
-}
-
-.intro a:visited
-{
-    color: darkgray;
-}
-
-.intro a:hover, a:active, a.current-page, a.current-page:visited{
-    background-color: #006666;
-    color: silver;
-    font-weight: bold;
-    border-color: silver;
-}
-
 /*.intro p{
     
 }*/
@@ -164,17 +138,21 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
 
  /* footer */
 
- footer{
+footer{
     display:flex;
+    flex-direction: column;
     justify-content: center;
- }
+    text-align:center;
+}
 
- footer div{
-    margin:1%;
-    text-align: center;
- }
+.linkbox{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
 
- footer a{
+a.cta{
     display:inline-block;
     width: 20vw;
     max-width: 100px;
@@ -185,18 +163,26 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
     border-radius: 10px;
     background-color: #000066;
     color: darkgray;
+}
+
+.intro .cta{
     margin: 3% 0;
 }
 
-footer a:visited
+a.cta:visited
 {
     color: darkgray;
 }
 
-footer a:hover, a:active, a.current-page, a.current-page:visited{
+a.cta:hover, a.cta:active{
     background-color: #006666;
     color: silver;
     font-weight: bold;
     border-color: silver;
 }
 
+.icon{
+    height: 30px;
+    width: 30px;
+    margin: 0 2vw;
+}

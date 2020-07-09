@@ -36,10 +36,10 @@ Once your repository is set up, practice what you learned today to create a port
 
 - [X]  A navigation bar with `About`, `Projects`, and `Contact` that link to the corresponding pages
 - [X]  Gallery of projects created with flexbox - you may use random images in place of project screenshots for now with the random image link: https://picsum.photos/ or you may use images that mean something to you
-- [ ]  Information about you in place of the given placeholder
+- [X]  Information about you in place of the given placeholder
 - [X]  A `My Projects` button that links to the projects page
 - [X]  A `Contact Me` button that links to the contact page
-- [ ]  Links to any social media profiles (Instagram, linkedIn, Twitter) into the footer section of your home page
+- [X]  Links to any social media profiles (Instagram, linkedIn, Twitter) into the footer section of your home page
 
 ### Task 2b: Exit Ticket
 
@@ -52,7 +52,7 @@ The completion of these questions is mandatory for MVP. However, passing the qui
 The following goals are designed to stretch your knowledge and may require additional research beyond what was learned in class today.
 
 - [ ] Make your webpage work at different browser widths, including mobile
-- [ ] Add CSS animations
+- [X] Add CSS animations
 - [ ] Design and execute your own wireframe for `About`, `Projects`, and `Contact` pages
 - [ ] Host your website on Netlify.com
 
