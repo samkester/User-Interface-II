@@ -19,7 +19,7 @@ body{
 
 .fullwidth-shaded{
     width: 100%;
-    color: #002f2f;
+    color: #00002f;
     background-color:silver;
     padding: 2%;
 }
@@ -91,7 +91,8 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
 .intro img{
     width: 100%;
     max-width: 600px;
-    padding: 1%;
+    margin: 1vw;
+    margin-bottom: 0;
     border-radius: 25px;
 }
 
