@@ -47,7 +47,7 @@ Use the checklist below to guide your work today. Your final product should be p
   - [-] if you are using forms make sure the for in the label matches the id in the input
   - [X] Do a little research on colours / visual designs and make sure your site is not affecting those who could be colour blind
   - [X] Also not using solid black text on solid white background - make your text slightly grey by using something like #4D4D4D
-- [ ] Design should closely follow the [mobile wireframe](Wireframes/) given for your chosen layout
+- [X] Design should closely follow the [mobile wireframe](Wireframes/) given for your chosen layout
 
 ### Task 2b: Exit Ticket
 

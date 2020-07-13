@@ -84,25 +84,21 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
 
 .halfbox{
     width: 50%;
-    max-width: 624px;
+    padding: 1%;
     flex-shrink: 1;
 }
 
 .intro img{
     width: 100%;
-    max-width: 600px;
-    margin: 1vw;
-    margin-bottom: 0;
     border-radius: 25px;
 }
 
 .introduction-content-box{
-    height:100%;
-    padding-left: 10%;
-    padding-bottom: 2%;
+    height: 100%;
+    padding: 0% 5%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;    
+    justify-content: flex-end;
 }
 
 .intro h2{
@@ -118,13 +114,12 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
 .gallery{
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .gallery-item{
-    width: 23%;
-    min-width: 200px;
-    flex-shrink: 1;
+    width: 23%; /* four per row */
+    flex-grow: 1;
     margin: 1%;
 }
 
@@ -147,7 +142,7 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
     transition: visibility 1s;
 }
 
-.gallery-item:hover .gallery-description+img{
+.gallery-item:hover .gallery-description+img{ /* "img with a sibling of .galley-description" */
     opacity: .2;
 }
 
@@ -210,6 +205,22 @@ a.cta:hover, a.cta:active{
 
 @media(max-width: 800px)
 {
+    header{
+        align-items: center;
+    }
+
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav{
+        justify-content: center;
+    }
+
+    .gallery-item{
+        width: 31%; /* three per row */
+    }
 }
 
 @media(max-width: 500px)
@@ -243,10 +254,6 @@ a.cta:hover, a.cta:active{
         border-radius: 0px 0px 10px 10px;
     }
 
-
-    /* in all cases, make sure the H1 doesn't go further than 100% width */
-    /* place the .intro boxes above each other instead of next to each other */
-
     .intro{
         flex-direction:column;
         align-items: center;
@@ -275,18 +282,18 @@ a.cta:hover, a.cta:active{
 
     .gallery{
         justify-content: space-evenly;
-        margin-bottom: 5%;
+        margin: 0% 2%;
     }
 
     .gallery-item{
-        width: 40%;
-        /*margin: 5%;*/
+        width: 40%; /* two per row */
+        margin: 2%;
     }
 
-    /*footer{
-        padding: 10% 0%;
-    }*/
-
+    footer.fullwidth-shaded{
+        margin: 5% 0% 0%;
+        padding: 8% 0%;
+    }
 }
 
 @media(max-width: 1200px)
