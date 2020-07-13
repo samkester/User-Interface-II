@@ -40,9 +40,9 @@ Use the checklist below to guide your work today. Your final product should be p
 
 - [X] Insert a viewport meta tag into the head of the project with these html attributes: content="width=device-width, initial-scale=1"
 - [X] Introduce max-width media queries into your project at 800px and 500px
-- [ ] Add accessability features to your webpage
+- [X] Add accessability features to your webpage
   - per Slack:
-  - [ ] use the most semantic element possible
+  - [X] use the most semantic element possible
   - [X] make sure that alt attributes are filled out correctly
   - [X] if you are using forms make sure the for in the label matches the id in the input
   - [X] Do a little research on colours / visual designs and make sure your site is not affecting those who could be colour blind
@@ -59,7 +59,7 @@ The completion of these questions is mandatory for MVP. However, passing the qui
 
 Once you finish the minimum viable project, work on any of the following stretch goals:
 
-- [ ]  Test your website at several breakpoints and refactor code as needed. A few common breakpoints are below:
+- [X]  Test your website at several breakpoints and refactor code as needed. A few common breakpoints are below:
   - [X]  iPhone: 360×640
   - [X]  Laptop: 1366×768
   - [X]  Widescreen: 1920×1080
@@ -89,7 +89,7 @@ Once you finish the minimum viable project, work on any of the following stretch
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [X] Add your team lead as a reviewer on the pull-request
+- [X] Your team lead will count the project as complete by merging the branch back into master.
 

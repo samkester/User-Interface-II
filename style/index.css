@@ -42,15 +42,9 @@ nav{
     display:flex;
 }
 
-nav a{
-    display:inline-block;
-    width: 20%;
-    max-width: 100px;
-    text-align: center;
-    padding: 0.5em;
-    margin: 0;
-    background-color: #000066;
-    color: darkgray;
+nav a.button{
+    border: none;
+    border-radius: 0px;
 }
 
 nav a:first-child{
@@ -61,19 +55,31 @@ nav a:last-child{
     border-radius: 0px 10px 10px 0px;
 }
 
-nav a:visited
-{
+/* links */
+
+a.button{
+    display:inline-block;
+    width: 20vw;
+    max-width: 100px;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+    background-color: #000066;
+    color: darkgray;
+    border: 2px solid currentColor;
+    border-radius: 10px;
+}
+
+a.button:visited{
     color: darkgray;
 }
 
-nav a:hover, a:active, a.current-page, a.current-page:visited{
+a.button:hover, a.button:active, a.current-page, a.current-page:visited{
     background-color: #006666;
     color: silver;
     font-weight: bold;
     letter-spacing: -1px; /* Bold Condensed */
 }
-
-/* main */
 
 /* intro */
 
@@ -104,10 +110,6 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
 .intro h2{
     font-size: 3.2rem;
 }
-
-/*.intro p{
-    
-}*/
 
 /* gallery */
 
@@ -166,33 +168,8 @@ footer{
     align-items: center;
 }
 
-a.cta{
-    display:inline-block;
-    width: 20vw;
-    max-width: 100px;
-    text-align: center;
-    padding: 0.5em;
-    margin: 0;
-    border: 2px solid darkgray;
-    border-radius: 10px;
-    background-color: #000066;
-    color: darkgray;
-}
-
-.intro .cta{
+.intro .button{
     margin: 3% 0;
-}
-
-a.cta:visited
-{
-    color: darkgray;
-}
-
-a.cta:hover, a.cta:active{
-    background-color: #006666;
-    color: silver;
-    font-weight: bold;
-    border-color: silver;
 }
 
 .icon{
@@ -205,12 +182,7 @@ a.cta:hover, a.cta:active{
 
 @media(max-width: 800px)
 {
-    header{
-        align-items: center;
-    }
-
-    h1{
-        width: 100%;
+    header h1{
         text-align: center;
     }
 
@@ -225,25 +197,20 @@ a.cta:hover, a.cta:active{
 
 @media(max-width: 500px)
 {
-    header{
-        align-items: center;
+    a.button{
+        width: 40%;
+        max-width: 40%;
+        font-size: 2.4rem;
     }
 
     header h1{
         font-size: 3.6em;
-        text-align: center;
     }
 
     header nav{
         width: 100%;
         flex-direction: column;
         align-items: center;       
-    }
-
-    header nav a{
-        width: 40%;
-        max-width: 40%;
-        font-size: 2.4rem;
     }
 
     header nav a:first-child{
@@ -266,12 +233,6 @@ a.cta:hover, a.cta:active{
     .intro img{
         margin: 5% 0% 0%;
         width: 100%;
-    }
-
-    a.cta{
-        width: 40%;
-        max-width: 40%;
-        font-size: 2.4rem;
     }
 
     .introduction-content-box{
