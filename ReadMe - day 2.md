@@ -31,16 +31,22 @@ New features of a project should occur in a new branch in the same repository. F
 git checkout -b <firstName-lastName-day2> <firstName-lastName>.
 ```
 
-- [ ] Implement the project on your newly created `<firstName-lastName-day2>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName-day2>`.
+- [X] Implement the project on your newly created `<firstName-lastName-day2>` branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName-day2>`.
 
 ### Task 2: Minimum Viable Product
 
 Use the checklist below to guide your work today. Your final product should be presentable at mobile, tablet and a desktop-width.
 
-- [ ] Insert a viewport meta tag into the head of the project with these html attributes: content="width=device-width, initial-scale=1"
-- [ ] Introduce max-width media queries into your project at 800px and 500px
+- [X] Insert a viewport meta tag into the head of the project with these html attributes: content="width=device-width, initial-scale=1"
+- [X] Introduce max-width media queries into your project at 800px and 500px
 - [ ] Add accessability features to your webpage
+  - per Slack:
+  - [ ] use the most semantic element possible
+  - [ ] make sure that alt attributes are filled out correctly
+  - [-] if you are using forms make sure the for in the label matches the id in the input
+  - [X] Do a little research on colours / visual designs and make sure your site is not affecting those who could be colour blind
+  - [X] Also not using solid black text on solid white background - make your text slightly grey by using something like #4D4D4D
 - [ ] Design should closely follow the [mobile wireframe](Wireframes/) given for your chosen layout
 
 ### Task 2b: Exit Ticket

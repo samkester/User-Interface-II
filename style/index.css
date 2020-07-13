@@ -122,10 +122,10 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
 }
 
 .gallery-item{
-    width: 25%;
+    width: 23%;
     min-width: 200px;
     flex-shrink: 1;
-    padding: 1%;
+    margin: 1%;
 }
 
 .gallery-item img{
@@ -204,4 +204,92 @@ a.cta:hover, a.cta:active{
     height: 30px;
     width: 30px;
     margin: 0 2vw;
+}
+
+/* responsive design */
+
+@media(max-width: 800px)
+{
+}
+
+@media(max-width: 500px)
+{
+    header{
+        align-items: center;
+    }
+
+    h1{
+        font-size: 4.8em;
+        text-align: center;
+    }
+
+    header nav{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;       
+    }
+
+    header nav a{
+        width: 40%;
+        max-width: 40%;
+        font-size: 2.4rem;
+    }
+
+    header nav a:first-child{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    header nav a:last-child{
+        border-radius: 0px 0px 10px 10px;
+    }
+
+
+    /* in all cases, make sure the H1 doesn't go further than 100% width */
+    /* place the .intro boxes above each other instead of next to each other */
+
+    .intro{
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .halfbox{
+        width: 90%;
+    }
+
+    .intro img{
+        margin: 5% 0% 0%;
+        width: 100%;
+    }
+
+    a.cta{
+        width: 40%;
+        max-width: 40%;
+        font-size: 2.4rem;
+    }
+
+    .introduction-content-box{
+        padding: 0;
+        align-items: center;
+        margin: 5% 0%;
+    }
+
+    .gallery{
+        justify-content: space-evenly;
+        margin-bottom: 5%;
+    }
+
+    .gallery-item{
+        width: 40%;
+        /*margin: 5%;*/
+    }
+
+    /*footer{
+        padding: 10% 0%;
+    }*/
+
+}
+
+@media(max-width: 1200px)
+{
+
 }
