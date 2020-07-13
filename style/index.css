@@ -42,16 +42,9 @@ nav{
     display:flex;
 }
 
-nav a{
-    display:inline-block;
-    width: 20%;
-    max-width: 100px;
-    text-align: center;
-    padding: 0.5em;
-    margin: 0;
-    /*border-radius: 10px;*/
-    background-color: #000066;
-    color: darkgray;
+nav a.button{
+    border: none;
+    border-radius: 0px;
 }
 
 nav a:first-child{
@@ -62,18 +55,31 @@ nav a:last-child{
     border-radius: 0px 10px 10px 0px;
 }
 
-nav a:visited
-{
+/* links */
+
+a.button{
+    display:inline-block;
+    width: 20vw;
+    max-width: 100px;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+    background-color: #000066;
+    color: darkgray;
+    border: 2px solid currentColor;
+    border-radius: 10px;
+}
+
+a.button:visited{
     color: darkgray;
 }
 
-nav a:hover, a:active, a.current-page, a.current-page:visited{
+a.button:hover, a.button:active, a.current-page, a.current-page:visited{
     background-color: #006666;
     color: silver;
     font-weight: bold;
+    letter-spacing: -1px; /* Bold Condensed */
 }
-
-/* main */
 
 /* intro */
 
@@ -84,48 +90,39 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
 
 .halfbox{
     width: 50%;
-    max-width: 624px;
+    padding: 1%;
     flex-shrink: 1;
 }
 
 .intro img{
     width: 100%;
-    max-width: 600px;
-    margin: 1vw;
-    margin-bottom: 0;
     border-radius: 25px;
 }
 
 .introduction-content-box{
-    height:100%;
-    padding-left: 10%;
-    padding-bottom: 2%;
+    height: 100%;
+    padding: 0% 5%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;    
+    justify-content: flex-end;
 }
 
 .intro h2{
     font-size: 3.2rem;
 }
 
-/*.intro p{
-    
-}*/
-
 /* gallery */
 
 .gallery{
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .gallery-item{
-    width: 25%;
-    min-width: 200px;
-    flex-shrink: 1;
-    padding: 1%;
+    width: 23%; /* four per row */
+    flex-grow: 1;
+    margin: 1%;
 }
 
 .gallery-item img{
@@ -147,7 +144,7 @@ nav a:hover, a:active, a.current-page, a.current-page:visited{
     transition: visibility 1s;
 }
 
-.gallery-item:hover .gallery-description+img{
+.gallery-item:hover .gallery-description+img{ /* "img with a sibling of .galley-description" */
     opacity: .2;
 }
 
@@ -171,37 +168,98 @@ footer{
     align-items: center;
 }
 
-a.cta{
-    display:inline-block;
-    width: 20vw;
-    max-width: 100px;
-    text-align: center;
-    padding: 0.5em;
-    margin: 0;
-    border: 2px solid darkgray;
-    border-radius: 10px;
-    background-color: #000066;
-    color: darkgray;
-}
-
-.intro .cta{
+.intro .button{
     margin: 3% 0;
-}
-
-a.cta:visited
-{
-    color: darkgray;
-}
-
-a.cta:hover, a.cta:active{
-    background-color: #006666;
-    color: silver;
-    font-weight: bold;
-    border-color: silver;
 }
 
 .icon{
     height: 30px;
     width: 30px;
     margin: 0 2vw;
+}
+
+/* responsive design */
+
+@media(max-width: 800px)
+{
+    header h1{
+        text-align: center;
+    }
+
+    header nav{
+        justify-content: center;
+    }
+
+    .gallery-item{
+        width: 31%; /* three per row */
+    }
+}
+
+@media(max-width: 500px)
+{
+    a.button{
+        width: 40%;
+        max-width: 40%;
+        font-size: 2.4rem;
+    }
+
+    header h1{
+        font-size: 3.6em;
+    }
+
+    header nav{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;       
+    }
+
+    header nav a:first-child{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    header nav a:last-child{
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .intro{
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .halfbox{
+        width: 90%;
+    }
+
+    .intro img{
+        margin: 5% 0% 0%;
+        width: 100%;
+    }
+
+    .introduction-content-box{
+        padding: 0;
+        align-items: center;
+        margin: 5% 0%;
+    }
+
+    .gallery{
+        justify-content: space-evenly;
+        margin: 0% 2%;
+    }
+
+    .gallery-item{
+        width: 40%; /* two per row */
+        margin: 2%;
+    }
+
+    footer.fullwidth-shaded{
+        margin: 5% 0% 0%;
+        padding: 8% 0%;
+    }
+}
+
+@media(min-width: 1400px)
+{
+    .intro{
+        width: 1400px;
+    }
 }
