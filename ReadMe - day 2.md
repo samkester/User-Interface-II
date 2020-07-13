@@ -43,8 +43,8 @@ Use the checklist below to guide your work today. Your final product should be p
 - [ ] Add accessability features to your webpage
   - per Slack:
   - [ ] use the most semantic element possible
-  - [ ] make sure that alt attributes are filled out correctly
-  - [-] if you are using forms make sure the for in the label matches the id in the input
+  - [X] make sure that alt attributes are filled out correctly
+  - [X] if you are using forms make sure the for in the label matches the id in the input
   - [X] Do a little research on colours / visual designs and make sure your site is not affecting those who could be colour blind
   - [X] Also not using solid black text on solid white background - make your text slightly grey by using something like #4D4D4D
 - [X] Design should closely follow the [mobile wireframe](Wireframes/) given for your chosen layout
@@ -60,9 +60,9 @@ The completion of these questions is mandatory for MVP. However, passing the qui
 Once you finish the minimum viable project, work on any of the following stretch goals:
 
 - [ ]  Test your website at several breakpoints and refactor code as needed. A few common breakpoints are below:
-  - [ ]  iPhone: 360×640
-  - [ ]  Laptop: 1366×768
-  - [ ]  Widescreen: 1920×1080
+  - [X]  iPhone: 360×640
+  - [X]  Laptop: 1366×768
+  - [X]  Widescreen: 1920×1080
 - [ ] Test your webpage's accessibility with a screen reader like [this](https://support.google.com/accessibility/answer/7031755?hl=en)
 - [ ] Start over with min-width media queries to get a feel for how a mobile first approach would be like. I recommend making a branch of all your content in a new folder named "mobile-first" to keep it separate
 - [ ] Test your webpage's accessibility with a screen reader like [this](https://support.google.com/accessibility/answer/7031755?hl=en)
